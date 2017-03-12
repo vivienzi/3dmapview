@@ -27,14 +27,8 @@ Cesium.loadJson('nations_test.json').then(function(Data) {
       var date = state['Call Drop Rate'][i][0];
       var rate = state['Call Drop Rate'][i][1];
       var subs = state['Subscriber'][i][1];
-      // var clock = new Cesium.Clock({
-      //      startTime : Cesium.JulianDate.fromIso8601(state['Call Drop Rate'][0][0]),
-      //      currentTime : Cesium.JulianDate.fromIso8601(date),
-      //      stopTime : Cesium.JulianDate.fromIso8601(state['Call Drop Rate'][state['Call Drop Rate'].length-1][0]),
-      //      clockRange : Cesium.ClockRange.CLAMPED,
-      // });
       blueBox.box = {
-          dimensions : new Cesium.Cartesian3(150000.0, subs/10, rate*100000000),
+          dimensions : new Cesium.Cartesian3(50000.0, subs/5, rate*20000000),
           material : Cesium.Color.fromRandom({
             alpha: 1.0
           }),
@@ -50,3 +44,95 @@ Cesium.loadJson('nations_test.json').then(function(Data) {
 // state.lon, state.lat state['Call Drop Rate'][1][1]
 // state['Call Drop Rate'][1][0]
 // state.lon, state.lat state['Call Drop Rate'][1][1]
+
+//draw d3 chart
+var w = 500;
+  var h = 200;
+  var padding =40;
+  var svg = d3.select("body").append("svg")
+  .attr("width", w)
+  .attr("height", h)
+  .attr("padding", padding);
+
+d3.json('nations_test.json',function(data){
+  var dataSet = data;
+  var days = dataSet[0]['Subscriber'].length;
+  var result = [];
+  var formatAsPercentage = d3.format(".1%");
+  for (i = 0; i < days; i++){
+    var everyday = [];
+    for (state of dataSet){
+      var array1 = state['Call Drop Rate'];
+      var array2 = state['Call Setup Failure Rate'];
+      var array3 = state['Subscriber'];
+      everyday.push([array1[i][1], array2[i][1], array3[i][1], array3[i][0] ]);
+    }
+    result.push( everyday );
+  }
+
+  var xScale = d3.scaleLinear()
+  .domain([0, d3.max(result[0], function(d) { return d[1]; })])
+  .range([padding, w - padding * 2]);
+  var yScale = d3.scaleLinear()
+  .domain([0, d3.max(result[0], function(d) { return d[0]; })])
+  .range([h - padding, padding]);
+  var rScale = d3.scaleLinear()
+  .domain([0, d3.max(result[0], function(d) { return d[2]; })])
+  .range([2, 20]);
+
+  //draw bubble with data
+  svg.selectAll(".bubble")
+  .data(result[0])
+  .enter()
+  .append("circle")
+  .attr('class','bubble')
+  .attr('fill',function() {
+    return "hsl(" + Math.random() * 360 + ",100%,50%)";
+  })
+  .attr("cx",function(d){
+    return xScale(d[1]);
+  })
+  .attr("cy", function(d){
+    return yScale(d[0]);
+  })
+  .attr("r", function(d){
+    return rScale(d[2]);
+  });
+
+  //add x,y axis
+  var xAxis = d3.axisBottom()
+  .scale(xScale);
+  var yAxis = d3.axisLeft()
+  .scale(yScale)
+  .ticks(7)
+  .tickFormat(formatAsPercentage);
+
+  svg.append("g")
+  .attr("class", "axis")
+  .attr("transform", "translate(0," + (h - padding/2) + ")")
+  .call(xAxis);
+  svg.append("g")
+  .attr("class", "axis")
+  .attr("transform", "translate(" + padding + ",0)")
+  .call(yAxis);
+  // add text
+  svg.append("text")
+  .attr("transform", "translate(" + (w/2) + "," + (h - padding/2) + ")")
+  .style("text-anchor", "right")
+  .text("Call Setup Failures Rate");
+
+  svg.append("text")
+  .attr("transform", "rotate(-90)")
+  .attr("y", 0 + padding)
+  .attr("x", 0 - w/3)
+  .attr("dy", "1em")
+  .style("text-anchor" , "right")
+  .text("Call Drop Rate");
+  //
+  svg.append("text")
+  .attr("x", (w/2))
+  .attr("y", h - (4*padding))
+  .attr("text-anchor", "middle")
+  .style("font-size", "16px")
+  .text(result[0][0][3]);
+})

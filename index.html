@@ -6,7 +6,8 @@
     <script src="./node_modules/cesium/Build/Cesium/Cesium.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="./src/Sandcastle-header.js"></script>
-    <script type="text/javascript" src="./node_modules/requirejs/require.js"></script>
+    <!-- <script type="text/javascript" src="./node_modules/requirejs/require.js"></script> -->
+    <script src="https://d3js.org/d3.v4.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
@@ -14,6 +15,7 @@
     <title>Real 3D chart</title>
   </head>
   <body>
+    <div id= chart></div>
     <div id="cesiumContainer" class="fullSize"></div>
     <div id="loadingOverlay"><h1>Loading...</h1></div>
     <div id="toolbar"></div>
