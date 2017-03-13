@@ -10,8 +10,8 @@
 * Add a chart indicate details
 -------------------------------
 <h2>Feature
-* Create 3D map to demonstrate the data of different states 
+* Create 3D map to demonstrate the data of different states
 
 -------------------------------
-<h3>Future
+Future
 * Dynamic feature of Timeline is in scripting...

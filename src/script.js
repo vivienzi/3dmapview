@@ -28,7 +28,7 @@ Cesium.loadJson('nations_test.json').then(function(Data) {
       var rate = state['Call Drop Rate'][i][1];
       var subs = state['Subscriber'][i][1];
       blueBox.box = {
-          dimensions : new Cesium.Cartesian3(50000.0, subs/5, rate*20000000),
+          dimensions : new Cesium.Cartesian3(subs/4, 50000.0, rate*20000000),
           material : Cesium.Color.fromRandom({
             alpha: 1.0
           }),
