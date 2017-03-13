@@ -13,8 +13,6 @@
                 "id" : "MA",
                 "properties" : {
                     "name" : "Massachusetts",
-                    "Statehood" : "Feb. 6, 1788",
-                    "Population" : 6692824
                 }
             }, {
                 "type" : "Polygon",
@@ -22,8 +20,6 @@
                 "id" : "MN",
                 "properties" : {
                     "name" : "Minnesota",
-                    "Statehood" : "May 11, 1858",
-                    "Population" : 5420380
                 }
             }, {
                 "type" : "Polygon",
@@ -31,8 +27,6 @@
                 "id" : "MT",
                 "properties" : {
                     "name" : "Montana",
-                    "Statehood" : "Nov. 8, 1889",
-                    "Population" : 1015165
                 }
             }, {
                 "type" : "Polygon",
@@ -40,8 +34,6 @@
                 "id" : "ND",
                 "properties" : {
                     "name" : "North Dakota",
-                    "Statehood" : "Nov. 2, 1889",
-                    "Population" : 723393
                 }
             }, {
                 "type" : "MultiPolygon",
@@ -49,8 +41,6 @@
                 "id" : "HI",
                 "properties" : {
                     "name" : "Hawaii",
-                    "Statehood" : "Aug. 21, 1959",
-                    "Population" : 1404054
                 }
             }, {
                 "type" : "Polygon",
@@ -58,8 +48,6 @@
                 "id" : "ID",
                 "properties" : {
                     "name" : "Idaho",
-                    "Statehood" : "July 3, 1890",
-                    "Population" : 1612136
                 }
             }, {
                 "type" : "MultiPolygon",
@@ -67,8 +55,6 @@
                 "id" : "WA",
                 "properties" : {
                     "name" : "Washington",
-                    "Statehood" : "Nov. 11, 1889",
-                    "Population" : 6971406
                 }
             }, {
                 "type" : "Polygon",
@@ -76,8 +62,6 @@
                 "id" : "AZ",
                 "properties" : {
                     "name" : "Arizona",
-                    "Statehood" : "Feb. 14, 1912",
-                    "Population" : 6626624
                 }
             }, {
                 "type" : "MultiPolygon",
@@ -85,8 +69,6 @@
                 "id" : "CA",
                 "properties" : {
                     "name" : "California",
-                    "Statehood" : "Sept. 9, 1850",
-                    "Population" : 38332521
                 }
             }, {
                 "type" : "Polygon",
@@ -94,8 +76,6 @@
                 "id" : "CO",
                 "properties" : {
                     "name" : "Colorado",
-                    "Statehood" : "Aug. 1, 1876",
-                    "Population" : 5268367
                 }
             }, {
                 "type" : "Polygon",
@@ -103,8 +83,6 @@
                 "id" : "NV",
                 "properties" : {
                     "name" : "Nevada",
-                    "Statehood" : "Oct. 31, 1864",
-                    "Population" : 2790136
                 }
             }, {
                 "type" : "Polygon",
@@ -112,8 +90,6 @@
                 "id" : "NM",
                 "properties" : {
                     "name" : "New Mexico",
-                    "Statehood" : "Jan. 6, 1912",
-                    "Population" : 2085287
                 }
             }, {
                 "type" : "MultiPolygon",
@@ -121,8 +97,6 @@
                 "id" : "OR",
                 "properties" : {
                     "name" : "Oregon",
-                    "Statehood" : "Feb. 14, 1859",
-                    "Population" : 3930065
                 }
             }, {
                 "type" : "Polygon",
@@ -130,8 +104,6 @@
                 "id" : "UT",
                 "properties" : {
                     "name" : "Utah",
-                    "Statehood" : "Jan. 4, 1896",
-                    "Population" : 2900872
                 }
             }, {
                 "type" : "Polygon",
@@ -139,8 +111,6 @@
                 "id" : "WY",
                 "properties" : {
                     "name" : "Wyoming",
-                    "Statehood" : "July 10, 1890",
-                    "Population" : 582658
                 }
             }, {
                 "type" : "Polygon",
@@ -148,8 +118,6 @@
                 "id" : "AR",
                 "properties" : {
                     "name" : "Arkansas",
-                    "Statehood" : "June 15, 1836",
-                    "Population" : 2959373
                 }
             }, {
                 "type" : "Polygon",
@@ -157,8 +125,6 @@
                 "id" : "IA",
                 "properties" : {
                     "name" : "Iowa",
-                    "Statehood" : "Dec. 28, 1846",
-                    "Population" : 3090416
                 }
             }, {
                 "type" : "Polygon",
@@ -166,8 +132,6 @@
                 "id" : "KS",
                 "properties" : {
                     "name" : "Kansas",
-                    "Statehood" : "Jan. 29, 1861",
-                    "Population" : 2893957
                 }
             }, {
                 "type" : "Polygon",
@@ -175,8 +139,6 @@
                 "id" : "MO",
                 "properties" : {
                     "name" : "Missouri",
-                    "Statehood" : "Aug. 10, 1821",
-                    "Population" : 6044171
                 }
             }, {
                 "type" : "Polygon",
@@ -184,8 +146,6 @@
                 "id" : "NE",
                 "properties" : {
                     "name" : "Nebraska",
-                    "Statehood" : "Mar. 1, 1867",
-                    "Population" : 1868516
                 }
             }, {
                 "type" : "Polygon",
@@ -193,8 +153,6 @@
                 "id" : "OK",
                 "properties" : {
                     "name" : "Oklahoma",
-                    "Statehood" : "Nov. 16, 1907",
-                    "Population" : 3850568
                 }
             }, {
                 "type" : "Polygon",
@@ -202,8 +160,6 @@
                 "id" : "SD",
                 "properties" : {
                     "name" : "South Dakota",
-                    "Statehood" : "Nov. 2, 1889",
-                    "Population" : 844877
                 }
             }, {
                 "type" : "MultiPolygon",
@@ -211,8 +167,6 @@
                 "id" : "LA",
                 "properties" : {
                     "name" : "Louisiana",
-                    "Statehood" : "Apr. 30, 1812",
-                    "Population" : 4625470
                 }
             }, {
                 "type" : "MultiPolygon",
@@ -220,8 +174,6 @@
                 "id" : "TX",
                 "properties" : {
                     "name" : "Texas",
-                    "Statehood" : "Dec. 29, 1845",
-                    "Population" : 26448193
                 }
             }, {
                 "type" : "Polygon",
@@ -229,8 +181,6 @@
                 "id" : "CT",
                 "properties" : {
                     "name" : "Connecticut",
-                    "Statehood" : "Jan. 9, 1788",
-                    "Population" : 3596080
                 }
             }, {
                 "type" : "Polygon",
@@ -238,8 +188,6 @@
                 "id" : "NH",
                 "properties" : {
                     "name" : "New Hampshire",
-                    "Statehood" : "June 21, 1788",
-                    "Population" : 1323459
                 }
             }, {
                 "type" : "MultiPolygon",
@@ -247,8 +195,6 @@
                 "id" : "RI",
                 "properties" : {
                     "name" : "Rhode Island",
-                    "Statehood" : "May 29, 1790",
-                    "Population" : 1051511
                 }
             }, {
                 "type" : "Polygon",
@@ -256,8 +202,6 @@
                 "id" : "VT",
                 "properties" : {
                     "name" : "Vermont",
-                    "Statehood" : "Mar. 4, 1791",
-                    "Population" : 626630
                 }
             }, {
                 "type" : "MultiPolygon",
@@ -265,8 +209,6 @@
                 "id" : "AL",
                 "properties" : {
                     "name" : "Alabama",
-                    "Statehood" : "Dec. 14, 1819",
-                    "Population" : 4833722
                 }
             }, {
                 "type" : "MultiPolygon",
@@ -274,8 +216,6 @@
                 "id" : "FL",
                 "properties" : {
                     "name" : "Florida",
-                    "Statehood" : "Mar. 3, 1845",
-                    "Population" : 19552860
                 }
             }, {
                 "type" : "MultiPolygon",
@@ -283,8 +223,6 @@
                 "id" : "GA",
                 "properties" : {
                     "name" : "Georgia",
-                    "Statehood" : "Jan. 2, 1788",
-                    "Population" : 9992167
                 }
             }, {
                 "type" : "MultiPolygon",
@@ -292,8 +230,6 @@
                 "id" : "MS",
                 "properties" : {
                     "name" : "Mississippi",
-                    "Statehood" : "Dec. 10, 1817",
-                    "Population" : 2991207
                 }
             }, {
                 "type" : "MultiPolygon",
@@ -301,8 +237,6 @@
                 "id" : "SC",
                 "properties" : {
                     "name" : "South Carolina",
-                    "Statehood" : "May 23, 1788",
-                    "Population" : 4774839
                 }
             }, {
                 "type" : "Polygon",
@@ -310,8 +244,6 @@
                 "id" : "IL",
                 "properties" : {
                     "name" : "Illinois",
-                    "Statehood" : "Dec. 3, 1818",
-                    "Population" : 12882135
                 }
             }, {
                 "type" : "Polygon",
@@ -319,8 +251,6 @@
                 "id" : "IN",
                 "properties" : {
                     "name" : "Indiana",
-                    "Statehood" : "Dec. 11, 1816",
-                    "Population" : 6570902
                 }
             }, {
                 "type" : "MultiPolygon",
@@ -328,8 +258,6 @@
                 "id" : "KY",
                 "properties" : {
                     "name" : "Kentucky",
-                    "Statehood" : "June 1, 1792",
-                    "Population" : 4395295
                 }
             }, {
                 "type" : "MultiPolygon",
@@ -337,8 +265,6 @@
                 "id" : "NC",
                 "properties" : {
                     "name" : "North Carolina",
-                    "Statehood" : "Nov. 21, 1789",
-                    "Population" : 9848060
                 }
             }, {
                 "type" : "Polygon",
@@ -346,8 +272,6 @@
                 "id" : "OH",
                 "properties" : {
                     "name" : "Ohio",
-                    "Statehood" : "Mar. 1, 1803",
-                    "Population" : 11570808
                 }
             }, {
                 "type" : "Polygon",
@@ -355,8 +279,6 @@
                 "id" : "TN",
                 "properties" : {
                     "name" : "Tennessee",
-                    "Statehood" : "June 1, 1796",
-                    "Population" : 6495978
                 }
             }, {
                 "type" : "MultiPolygon",
@@ -364,8 +286,6 @@
                 "id" : "VA",
                 "properties" : {
                     "name" : "Virginia",
-                    "Statehood" : "June 25, 1788",
-                    "Population" : 8260405
                 }
             }, {
                 "type" : "Polygon",
@@ -373,8 +293,6 @@
                 "id" : "WI",
                 "properties" : {
                     "name" : "Wisconsin",
-                    "Statehood" : "May 29, 1848",
-                    "Population" : 5742713
                 }
             }, {
                 "type" : "Polygon",
@@ -382,8 +300,6 @@
                 "id" : "WV",
                 "properties" : {
                     "name" : "West Virginia",
-                    "Statehood" : "June 20, 1863",
-                    "Population" : 1854304
                 }
             }, {
                 "type" : "Polygon",
@@ -391,8 +307,6 @@
                 "id" : "DE",
                 "properties" : {
                     "name" : "Delaware",
-                    "Statehood" : "Dec. 7, 1787",
-                    "Population" : 925749
                 }
             }, {
                 "type" : "Polygon",
@@ -400,8 +314,6 @@
                 "id" : "DC",
                 "properties" : {
                     "name" : "District of Columbia",
-                    "Statehood" : "July 16, 1790",
-                    "Population" : 646449
                 }
             }, {
                 "type" : "MultiPolygon",
@@ -409,8 +321,6 @@
                 "id" : "MD",
                 "properties" : {
                     "name" : "Maryland",
-                    "Statehood" : "Apr. 28, 1788",
-                    "Population" : 5928814
                 }
             }, {
                 "type" : "MultiPolygon",
@@ -418,8 +328,6 @@
                 "id" : "NJ",
                 "properties" : {
                     "name" : "New Jersey",
-                    "Statehood" : "Dec. 18, 1787",
-                    "Population" : 8899339
                 }
             }, {
                 "type" : "MultiPolygon",
@@ -427,8 +335,6 @@
                 "id" : "NY",
                 "properties" : {
                     "name" : "New York",
-                    "Statehood" : "July 26, 1788",
-                    "Population" : 19651127
                 }
             }, {
                 "type" : "Polygon",
@@ -436,8 +342,6 @@
                 "id" : "PA",
                 "properties" : {
                     "name" : "Pennsylvania",
-                    "Statehood" : "Dec. 12, 1787",
-                    "Population" : 12773801
                 }
             }, {
                 "type" : "MultiPolygon",
@@ -445,8 +349,6 @@
                 "id" : "ME",
                 "properties" : {
                     "name" : "Maine",
-                    "Statehood" : "Mar. 15, 1820",
-                    "Population" : 1328302
                 }
             }, {
                 "type" : "Polygon",
@@ -454,8 +356,6 @@
                 "id" : "MI",
                 "properties" : {
                     "name" : "Michigan",
-                    "Statehood" : "Jan. 26, 1837",
-                    "Population" : 9895622
                 }
             }, {
                 "type" : "MultiPolygon",
@@ -463,8 +363,6 @@
                 "id" : "AK",
                 "properties" : {
                     "name" : "Alaska",
-                    "Statehood" : "Jan. 3, 1959",
-                    "Population" : 735132
                 }
             }]
         }

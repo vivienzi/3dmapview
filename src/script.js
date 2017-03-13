@@ -13,32 +13,35 @@ Sandcastle.reset = function() {
 };
 
 Sandcastle.finishedLoading();
-viewer.dataSources.add(Cesium.GeoJsonDataSource.load('ne_10m_us_states.topojson', {
-        stroke: Cesium.Color.PINK,
-        strokeWidth: 3
-    }));
-Cesium.loadJson('nations_test.json').then(function(Data) {
-  for( state of Data){
-    var blueBox = viewer.entities.add({
-      name : 'box',
-      position: Cesium.Cartesian3.fromDegrees(state.lon, state.lat, 000000)
-    });
-    for( i in state['Call Drop Rate']){
-      var date = state['Call Drop Rate'][i][0];
-      var rate = state['Call Drop Rate'][i][1];
-      var subs = state['Subscriber'][i][1];
-      blueBox.box = {
-          dimensions : new Cesium.Cartesian3(subs/4, 50000.0, rate*20000000),
-          material : Cesium.Color.fromRandom({
-            alpha: 1.0
-          }),
-          outline : true,
-      }
-    }
-  }
-}).otherwise(function(error) {
-    alert("ERROR: ",error);
-});
+
+var dataSource = Cesium.CzmlDataSource.load("../public/nations_test_reformat.czml");
+viewer.dataSources.add(dataSource);
+// viewer.dataSources.add(Cesium.GeoJsonDataSource.load('ne_10m_us_states.topojson', {
+//         stroke: Cesium.Color.PINK,
+//         strokeWidth: 3
+//     }));
+// Cesium.loadJson('nations_test.json').then(function(Data) {
+//   for( state of Data){
+//     var blueBox = viewer.entities.add({
+//       name : 'box',
+//       position: Cesium.Cartesian3.fromDegrees(state.lon, state.lat, 000000)
+//     });
+//     for( i in state['Call Drop Rate']){
+//       var date = state['Call Drop Rate'][i][0];
+//       var rate = state['Call Drop Rate'][i][1];
+//       var subs = state['Subscriber'][i][1];
+//       blueBox.box = {
+//           dimensions : new Cesium.Cartesian3(subs/4, 50000.0, rate*20000000),
+//           material : Cesium.Color.fromRandom({
+//             alpha: 1.0
+//           }),
+//           outline : true,
+//       }
+//     }
+//   }
+// }).otherwise(function(error) {
+//     alert("ERROR: ",error);
+// });
 
 //
 // state.lon, state.lat state['Call Drop Rate'][1][1]
@@ -54,7 +57,7 @@ var w = 500;
   .attr("height", h)
   .attr("padding", padding);
 
-d3.json('nations_test.json',function(data){
+d3.json('../public/nations_test.json',function(data){
   var dataSet = data;
   var days = dataSet[0]['Subscriber'].length;
   var result = [];
